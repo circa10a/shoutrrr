@@ -9,9 +9,9 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/join"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/services/push/join"
 )
 
 func TestJoin(t *testing.T) {
@@ -36,6 +36,7 @@ var _ = ginkgo.Describe("the join service", func() {
 			if envJoinURL.String() == "" {
 				return
 			}
+
 			serviceURL, _ := url.Parse(envJoinURL.String())
 			err := service.Initialize(serviceURL, testutils.TestLogger())
 			gomega.Expect(err).NotTo(gomega.HaveOccurred())
@@ -130,6 +131,7 @@ var _ = ginkgo.Describe("the join config", func() {
 
 	ginkgo.Describe("sending the payload", func() {
 		var err error
+
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
 		})

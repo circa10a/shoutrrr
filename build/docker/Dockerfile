@@ -12,9 +12,9 @@ FROM scratch
 
 ARG BASE_IMAGE
 
-LABEL "org.opencontainers.image.url"="https://shoutrrr.nickfedor.com/" \
-    "org.opencontainers.image.documentation"="https://shoutrrr.nickfedor.com/" \
-    "org.opencontainers.image.source"="https://github.com/nicholas-fedor/shoutrrr" \
+LABEL "org.opencontainers.image.url"="https://circa10a.github.io/shoutrrr/" \
+    "org.opencontainers.image.documentation"="https://circa10a.github.io/shoutrrr/" \
+    "org.opencontainers.image.source"="https://github.com/circa10a/shoutrrr" \
     "org.opencontainers.image.licenses"="MIT" \
     "org.opencontainers.image.title"="Shoutrrr" \
     "org.opencontainers.image.description"="A notification library for gophers and their furry friends." \

@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/discord"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/discord"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // createTestService creates a Discord service instance configured for testing.

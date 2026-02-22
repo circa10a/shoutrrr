@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/color"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/color"
+	"github.com/circa10a/shoutrrr/pkg/format"
 )
 
 // errInvalidFormat indicates an invalid user input format.

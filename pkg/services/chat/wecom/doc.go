@@ -15,7 +15,7 @@ to WeChat Work groups via webhook bots. It supports:
 
 # Example Usage
 
-	import "github.com/nicholas-fedor/shoutrrr"
+	import "github.com/circa10a/shoutrrr"
 
 	// Send a simple message
 	url := "wecom://693axxx6-7aoc-4bc4-97a0-0ec2sifa5aaa"

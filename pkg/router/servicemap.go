@@ -1,32 +1,33 @@
 package router
 
 import (
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/discord"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/googlechat"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/lark"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/matrix"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/mattermost"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/rocketchat"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/signal"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/slack"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/teams"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/telegram"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/wecom"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/zulip"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/email/smtp"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/incident/opsgenie"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/incident/pagerduty"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/bark"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/gotify"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/ifttt"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/join"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/ntfy"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/pushbullet"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/pushover"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/specialized/generic"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/specialized/logger"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/specialized/notifiarr"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/discord"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/googlechat"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/lark"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/matrix"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/mattermost"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/rocketchat"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/signal"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/slack"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/teams"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/telegram"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/wecom"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/zulip"
+	"github.com/circa10a/shoutrrr/pkg/services/email/smtp"
+	"github.com/circa10a/shoutrrr/pkg/services/incident/opsgenie"
+	"github.com/circa10a/shoutrrr/pkg/services/incident/pagerduty"
+	"github.com/circa10a/shoutrrr/pkg/services/push/bark"
+	"github.com/circa10a/shoutrrr/pkg/services/push/gotify"
+	"github.com/circa10a/shoutrrr/pkg/services/push/ifttt"
+	"github.com/circa10a/shoutrrr/pkg/services/push/join"
+	"github.com/circa10a/shoutrrr/pkg/services/push/ntfy"
+	"github.com/circa10a/shoutrrr/pkg/services/push/pushbullet"
+	"github.com/circa10a/shoutrrr/pkg/services/push/pushover"
+	"github.com/circa10a/shoutrrr/pkg/services/sms/twilio"
+	"github.com/circa10a/shoutrrr/pkg/services/specialized/generic"
+	"github.com/circa10a/shoutrrr/pkg/services/specialized/logger"
+	"github.com/circa10a/shoutrrr/pkg/services/specialized/notifiarr"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 var serviceMap = map[string]func() types.Service{
@@ -54,6 +55,7 @@ var serviceMap = map[string]func() types.Service{
 	"smtp":       func() types.Service { return &smtp.Service{} },
 	"teams":      func() types.Service { return &teams.Service{} },
 	"telegram":   func() types.Service { return &telegram.Service{} },
+	"twilio":     func() types.Service { return &twilio.Service{} },
 	"wecom":      func() types.Service { return &wecom.Service{} },
 	"zulip":      func() types.Service { return &zulip.Service{} },
 }

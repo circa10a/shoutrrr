@@ -3,9 +3,9 @@ package shoutrrr
 import (
 	"fmt"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/meta"
-	"github.com/nicholas-fedor/shoutrrr/pkg/router"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/internal/meta"
+	"github.com/circa10a/shoutrrr/pkg/router"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // defaultRouter manages the creation and routing of notification services.

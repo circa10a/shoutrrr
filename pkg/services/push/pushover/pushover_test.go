@@ -11,9 +11,9 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/pushover"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/services/push/pushover"
 )
 
 const hookURL = "https://api.pushover.net/1/messages.json"
@@ -42,6 +42,7 @@ var _ = ginkgo.Describe("the pushover service", func() {
 			if envPushoverURL.String() == "" {
 				return
 			}
+
 			serviceURL, _ := url.Parse(envPushoverURL.String())
 			err := service.Initialize(serviceURL, testutils.TestLogger())
 			gomega.Expect(err).NotTo(gomega.HaveOccurred())

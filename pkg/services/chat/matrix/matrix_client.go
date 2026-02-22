@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
-	"github.com/nicholas-fedor/shoutrrr/pkg/util"
+	"github.com/circa10a/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/util"
 )
 
 // schemeHTTPPrefixLength is the length of "http" in "https", used to strip TLS suffix.

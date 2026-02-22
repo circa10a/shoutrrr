@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/standard"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/services/standard"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // ErrUnexpectedStatus indicates an unexpected HTTP status code from the Google Chat API.

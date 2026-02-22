@@ -12,9 +12,9 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/specialized/notifiarr"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/services/specialized/notifiarr"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // TestNotifiarr runs the Notifiarr service test suite using Ginkgo.
@@ -141,6 +141,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("sending the payload", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})
@@ -256,6 +257,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("event ID parameter handling", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})
@@ -333,6 +335,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("Discord mention parsing", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})
@@ -586,6 +589,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("image/thumbnail URL parameters", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})
@@ -751,6 +755,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("color customization parameters", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})
@@ -892,6 +897,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("integration tests with all features combined", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})
@@ -1007,6 +1013,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("advanced text fields (icon, content, footer)", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})
@@ -1143,6 +1150,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("combined usage of multiple new fields", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})
@@ -1457,6 +1465,7 @@ var _ = ginkgo.Describe("the notifiarr service", func() {
 	ginkgo.Describe("Send method edge cases", func() {
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
+
 			service = &notifiarr.Service{}
 			service.SetLogger(logger)
 		})

@@ -2,7 +2,7 @@
 #                                                                                                    #
 #                          Shoutrrr GoReleaser Development Release Configuration                     #
 #                                                                                                    #
-# Shoutrrr: https://github.com/nicholas-fedor/shoutrrr/                                              #
+# Shoutrrr: https://github.com/circa10a/shoutrrr/                                              #
 # GoReleaser: https://goreleaser.com/                                                                #
 #                                                                                                    #
 ######################################################################################################
@@ -48,9 +48,9 @@ builds:
       - -X main.version={{.Version}}
       - -X main.commit={{.Commit}}
       - -X main.date={{ .CommitDate }}
-      - -X github.com/nicholas-fedor/shoutrrr/internal/meta.Version={{ .Version }}
-      - -X github.com/nicholas-fedor/shoutrrr/internal/meta.Commit={{ .Commit }}
-      - -X github.com/nicholas-fedor/shoutrrr/internal/meta.Date={{ .Date }}
+      - -X github.com/circa10a/shoutrrr/internal/meta.Version={{ .Version }}
+      - -X github.com/circa10a/shoutrrr/internal/meta.Commit={{ .Commit }}
+      - -X github.com/circa10a/shoutrrr/internal/meta.Date={{ .Date }}
 
     # Custom environment variables to be set during the builds.
     # Invalid environment variables will be ignored.
@@ -129,8 +129,7 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:amd64-dev
-      - ghcr.io/nicholas-fedor/shoutrrr:amd64-dev
+      - circa10a/shoutrrr:amd64-dev
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.
@@ -180,8 +179,7 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:i386-dev
-      - ghcr.io/nicholas-fedor/shoutrrr:i386-dev
+      - circa10a/shoutrrr:i386-dev
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.
@@ -235,8 +233,7 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:armhf-dev
-      - ghcr.io/nicholas-fedor/shoutrrr:armhf-dev
+      - circa10a/shoutrrr:armhf-dev
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.
@@ -289,8 +286,7 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:arm64v8-dev
-      - ghcr.io/nicholas-fedor/shoutrrr:arm64v8-dev
+      - circa10a/shoutrrr:arm64v8-dev
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.
@@ -341,8 +337,7 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:riscv64-dev
-      - ghcr.io/nicholas-fedor/shoutrrr:riscv64-dev
+      - circa10a/shoutrrr:riscv64-dev
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.

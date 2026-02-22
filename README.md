@@ -1,8 +1,8 @@
 <!-- markdownlint-disable -->
 <div align="center">
 
-<a href="https://github.com/nicholas-fedor/shoutrrr">
-    <img src="https://raw.githubusercontent.com/nicholas-fedor/shoutrrr/refs/heads/main/docs/assets/media/shoutrrr-logotype.svg" width="450" />
+<a href="https://github.com/circa10a/shoutrrr">
+    <img src="https://raw.githubusercontent.com/circa10a/shoutrrr/refs/heads/main/docs/assets/media/shoutrrr-logotype.svg" width="450" />
 </a>
 
 # Shoutrrr
@@ -10,15 +10,15 @@
 A notification library for gophers and their furry friends.<br />
 Heavily inspired by <a href="https://github.com/caronc/apprise">caronc/apprise</a>.
 
-![github actions workflow status](https://github.com/nicholas-fedor/shoutrrr/workflows/Main%20Workflow/badge.svg)
-[![codecov](https://codecov.io/gh/nicholas-fedor/shoutrrr/branch/main/graph/badge.svg)](https://codecov.io/gh/nicholas-fedor/shoutrrr)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/47eed72de79448e2a6e297d770355544)](https://www.codacy.com/gh/nicholas-fedor/shoutrrr/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nicholas-fedor/shoutrrr&amp;utm_campaign=Badge_Grade)
-[![report card](https://goreportcard.com/badge/github.com/nicholas-fedor/shoutrrr)](https://goreportcard.com/badge/github.com/nicholas-fedor/shoutrrr)
-[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/nicholas-fedor/shoutrrr)
-[![github code size in bytes](https://img.shields.io/github/languages/code-size/nicholas-fedor/shoutrrr.svg?style=flat-square)](https://github.com/nicholas-fedor/shoutrrr)
-[![license](https://img.shields.io/github/license/nicholas-fedor/shoutrrr.svg?style=flat-square)](https://github.com/nicholas-fedor/shoutrrr/blob/main/LICENSE)
-[![Pulls from DockerHub](https://img.shields.io/docker/pulls/nickfedor/shoutrrr.svg)](https://hub.docker.com/r/nickfedor/shoutrrr)
-[![godoc](https://godoc.org/github.com/nicholas-fedor/shoutrrr?status.svg)](https://godoc.org/github.com/nicholas-fedor/shoutrrr) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+![github actions workflow status](https://github.com/circa10a/shoutrrr/workflows/Main%20Workflow/badge.svg)
+[![codecov](https://codecov.io/gh/circa10a/shoutrrr/branch/main/graph/badge.svg)](https://codecov.io/gh/circa10a/shoutrrr)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/47eed72de79448e2a6e297d770355544)](https://www.codacy.com/gh/circa10a/shoutrrr/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=circa10a/shoutrrr&amp;utm_campaign=Badge_Grade)
+[![report card](https://goreportcard.com/badge/github.com/circa10a/shoutrrr)](https://goreportcard.com/badge/github.com/circa10a/shoutrrr)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/circa10a/shoutrrr)
+[![github code size in bytes](https://img.shields.io/github/languages/code-size/circa10a/shoutrrr.svg?style=flat-square)](https://github.com/circa10a/shoutrrr)
+[![license](https://img.shields.io/github/license/circa10a/shoutrrr.svg?style=flat-square)](https://github.com/circa10a/shoutrrr/blob/main/LICENSE)
+[![Pulls from DockerHub](https://img.shields.io/docker/pulls/circa10a/shoutrrr.svg)](https://hub.docker.com/r/circa10a/shoutrrr)
+[![godoc](https://godoc.org/github.com/circa10a/shoutrrr?status.svg)](https://godoc.org/github.com/circa10a/shoutrrr) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 </div>
@@ -53,14 +53,14 @@ Heavily inspired by <a href="https://github.com/caronc/apprise">caronc/apprise</
 
 ## Full Documentation
 
-Visit the project's [GitHub Page](https://shoutrrr.nickfedor.com) for full documentation.
+Visit the project's [GitHub Page](https://circa10a.github.io/shoutrrr) for full documentation.
 
 ## Installation
 
 ### From Source
 
 ```bash
-go install github.com/nicholas-fedor/shoutrrr/shoutrrr@latest
+go install github.com/circa10a/shoutrrr/shoutrrr@latest
 ```
 
 ### Binaries
@@ -70,36 +70,30 @@ Install the latest release binary to `$HOME/go/bin` (ensure it's in your `PATH`)
 - **Windows (amd64):**
 
   ```powershell
-  New-Item -ItemType Directory -Path $HOME\go\bin -Force | Out-Null; iwr (iwr https://api.github.com/repos/nicholas-fedor/shoutrrr/releases/latest | ConvertFrom-Json).assets.where({$_.name -like "*windows_amd64*.zip"}).browser_download_url -OutFile shoutrrr.zip; Add-Type -AssemblyName System.IO.Compression.FileSystem; ($z=[System.IO.Compression.ZipFile]::OpenRead("$PWD\shoutrrr.zip")).Entries | ? {$_.Name -eq 'shoutrrr.exe'} | % {[System.IO.Compression.ZipFileExtensions]::ExtractToFile($_, "$HOME\go\bin\$($_.Name)", $true)}; $z.Dispose(); rm shoutrrr.zip; if (Test-Path "$HOME\go\bin\shoutrrr.exe") { Write-Host "Successfully installed shoutrrr.exe to $HOME\go\bin" } else { Write-Host "Failed to install shoutrrr.exe" }
+  New-Item -ItemType Directory -Path $HOME\go\bin -Force | Out-Null; iwr (iwr https://api.github.com/repos/circa10a/shoutrrr/releases/latest | ConvertFrom-Json).assets.where({$_.name -like "*windows_amd64*.zip"}).browser_download_url -OutFile shoutrrr.zip; Add-Type -AssemblyName System.IO.Compression.FileSystem; ($z=[System.IO.Compression.ZipFile]::OpenRead("$PWD\shoutrrr.zip")).Entries | ? {$_.Name -eq 'shoutrrr.exe'} | % {[System.IO.Compression.ZipFileExtensions]::ExtractToFile($_, "$HOME\go\bin\$($_.Name)", $true)}; $z.Dispose(); rm shoutrrr.zip; if (Test-Path "$HOME\go\bin\shoutrrr.exe") { Write-Host "Successfully installed shoutrrr.exe to $HOME\go\bin" } else { Write-Host "Failed to install shoutrrr.exe" }
   ```
 
 - **Linux (amd64):**
 
   ```bash
-  mkdir -p $HOME/go/bin && curl -L $(curl -s https://api.github.com/repos/nicholas-fedor/shoutrrr/releases/latest | grep -o 'https://[^"]*linux_amd64[^"]*\.tar\.gz') | tar -xz --strip-components=1 -C $HOME/go/bin shoutrrr
+  mkdir -p $HOME/go/bin && curl -L $(curl -s https://api.github.com/repos/circa10a/shoutrrr/releases/latest | grep -o 'https://[^"]*linux_amd64[^"]*\.tar\.gz') | tar -xz --strip-components=1 -C $HOME/go/bin shoutrrr
   ```
 
 - **macOS (amd64):**
 
   ```bash
-  mkdir -p $HOME/go/bin && curl -L $(curl -s https://api.github.com/repos/nicholas-fedor/shoutrrr/releases/latest | grep -o 'https://[^"]*darwin_amd64[^"]*\.tar\.gz') | tar -xz --strip-components=1 -C $HOME/go/bin shoutrrr
+  mkdir -p $HOME/go/bin && curl -L $(curl -s https://api.github.com/repos/circa10a/shoutrrr/releases/latest | grep -o 'https://[^"]*darwin_amd64[^"]*\.tar\.gz') | tar -xz --strip-components=1 -C $HOME/go/bin shoutrrr
   ```
 
 > [!Note]
-> Visit the [releases page](https://github.com/nicholas-fedor/shoutrrr/releases) for other architectures (e.g., arm, arm64, i386, riscv64).
+> Visit the [releases page](https://github.com/circa10a/shoutrrr/releases) for other architectures (e.g., arm, arm64, i386, riscv64).
 
 ### Container Images
 
-- **[Docker Hub](https://hub.docker.com/r/nickfedor/shoutrrr):**
+- **[Docker Hub](https://hub.docker.com/r/circa10a/shoutrrr):**
 
   ```bash
-  docker pull nickfedor/shoutrrr:latest
-  ```
-
-- **[GHCR](https://github.com/users/nicholas-fedor/packages/container/package/shoutrrr):**
-
-  ```bash
-  docker pull ghcr.io/nicholas-fedor/shoutrrr:latest
+  docker pull circa10a/shoutrrr:latest
   ```
 
 > [!Note]
@@ -108,14 +102,14 @@ Install the latest release binary to `$HOME/go/bin` (ensure it's in your `PATH`)
 ### Go Package
 
 ```bash
-go get github.com/nicholas-fedor/shoutrrr@latest
+go get github.com/circa10a/shoutrrr@latest
 ```
 
 ### GitHub Action
 
 ```yaml
 - name: Shoutrrr
-  uses: nicholas-fedor/shoutrrr-action@v1
+  uses: circa10a/shoutrrr-action@v1
   with:
     url: ${{ secrets.SHOUTRRR_URL }}
     title: Deployed ${{ github.sha }}
@@ -133,7 +127,7 @@ shoutrrr send --url "slack://hook:T00000000-B00000000-XXXXXXXXXXXXXXXXXXXXXXXX@w
 ### Go Package Usage
 
 ```go
-import "github.com/nicholas-fedor/shoutrrr"
+import "github.com/circa10a/shoutrrr"
 
 errs := shoutrrr.Send("slack://hook:T00000000-B00000000-XXXXXXXXXXXXXXXXXXXXXXXX@webhook", "Hello, Slack!")
 if len(errs) > 0 {
@@ -144,7 +138,7 @@ if len(errs) > 0 {
 ### Docker
 
 ```bash
-docker run --rm nickfedor/shoutrrr:latest send --url "slack://hook:T00000000-B00000000-XXXXXXXXXXXXXXXXXXXXXXXX@webhook" --message "Hello, Slack!"
+docker run --rm circa10a/shoutrrr:latest send --url "slack://hook:T00000000-B00000000-XXXXXXXXXXXXXXXXXXXXXXXX@webhook" --message "Hello, Slack!"
 ```
 
 ### GitHub Action Usage
@@ -205,7 +199,7 @@ jobs:
       - [Your other workflow steps]
 
       - name: Shoutrrr
-        uses: nicholas-fedor/shoutrrr-action@v0.0.11
+        uses: circa10a/shoutrrr-action@v0.0.11
         with:
           url: ${{ secrets.SHOUTRRR_URL }}
           title: Deployed ${{ github.sha }}
@@ -252,28 +246,28 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/nicholas-fedor"><img src="https://avatars2.githubusercontent.com/u/71477161?v=4?s=100" width="100px;" alt="Nicholas Fedor"/><br /><sub><b>Nicholas Fedor</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=nicholas-fedor" title="Code">💻</a> <a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=nicholas-fedor" title="Documentation">📖</a> <a href="#maintenance-nicholas-fedor" title="Maintenance">🚧</a> <a href="https://github.com/nicholas-fedor/shoutrrr/pulls?q=is%3Apr+reviewed-by%3Anicholas-fedor" title="Reviewed Pull Requests">👀</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/amirschnell"><img src="https://avatars3.githubusercontent.com/u/9380508?v=4?s=100" width="100px;" alt="Amir Schnell"/><br /><sub><b>Amir Schnell</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=amirschnell" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://piksel.se"><img src="https://avatars2.githubusercontent.com/u/807383?v=4?s=100" width="100px;" alt="nils måsén"/><br /><sub><b>nils måsén</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=piksel" title="Code">💻</a> <a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=piksel" title="Documentation">📖</a> <a href="#maintenance-piksel" title="Maintenance">🚧</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/lukapeschke"><img src="https://avatars1.githubusercontent.com/u/17085536?v=4?s=100" width="100px;" alt="Luka Peschke"/><br /><sub><b>Luka Peschke</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=lukapeschke" title="Code">💻</a> <a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=lukapeschke" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/MrLuje"><img src="https://avatars0.githubusercontent.com/u/632075?v=4?s=100" width="100px;" alt="MrLuje"/><br /><sub><b>MrLuje</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=MrLuje" title="Code">💻</a> <a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=MrLuje" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://simme.dev"><img src="https://avatars0.githubusercontent.com/u/1596025?v=4?s=100" width="100px;" alt="Simon Aronsson"/><br /><sub><b>Simon Aronsson</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=simskij" title="Code">💻</a> <a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=simskij" title="Documentation">📖</a> <a href="#maintenance-simskij" title="Maintenance">🚧</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://arnested.dk"><img src="https://avatars2.githubusercontent.com/u/190005?v=4?s=100" width="100px;" alt="Arne Jørgensen"/><br /><sub><b>Arne Jørgensen</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=arnested" title="Documentation">📖</a> <a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=arnested" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/nicholas-fedor"><img src="https://avatars2.githubusercontent.com/u/71477161?v=4?s=100" width="100px;" alt="Nicholas Fedor"/><br /><sub><b>Nicholas Fedor</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=nicholas-fedor" title="Code">💻</a> <a href="https://github.com/circa10a/shoutrrr/commits?author=nicholas-fedor" title="Documentation">📖</a> <a href="#maintenance-nicholas-fedor" title="Maintenance">🚧</a> <a href="https://github.com/circa10a/shoutrrr/pulls?q=is%3Apr+reviewed-by%3Anicholas-fedor" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/amirschnell"><img src="https://avatars3.githubusercontent.com/u/9380508?v=4?s=100" width="100px;" alt="Amir Schnell"/><br /><sub><b>Amir Schnell</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=amirschnell" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://piksel.se"><img src="https://avatars2.githubusercontent.com/u/807383?v=4?s=100" width="100px;" alt="nils måsén"/><br /><sub><b>nils måsén</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=piksel" title="Code">💻</a> <a href="https://github.com/circa10a/shoutrrr/commits?author=piksel" title="Documentation">📖</a> <a href="#maintenance-piksel" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/lukapeschke"><img src="https://avatars1.githubusercontent.com/u/17085536?v=4?s=100" width="100px;" alt="Luka Peschke"/><br /><sub><b>Luka Peschke</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=lukapeschke" title="Code">💻</a> <a href="https://github.com/circa10a/shoutrrr/commits?author=lukapeschke" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/MrLuje"><img src="https://avatars0.githubusercontent.com/u/632075?v=4?s=100" width="100px;" alt="MrLuje"/><br /><sub><b>MrLuje</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=MrLuje" title="Code">💻</a> <a href="https://github.com/circa10a/shoutrrr/commits?author=MrLuje" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://simme.dev"><img src="https://avatars0.githubusercontent.com/u/1596025?v=4?s=100" width="100px;" alt="Simon Aronsson"/><br /><sub><b>Simon Aronsson</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=simskij" title="Code">💻</a> <a href="https://github.com/circa10a/shoutrrr/commits?author=simskij" title="Documentation">📖</a> <a href="#maintenance-simskij" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://arnested.dk"><img src="https://avatars2.githubusercontent.com/u/190005?v=4?s=100" width="100px;" alt="Arne Jørgensen"/><br /><sub><b>Arne Jørgensen</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=arnested" title="Documentation">📖</a> <a href="https://github.com/circa10a/shoutrrr/commits?author=arnested" title="Code">💻</a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/atighineanu"><img src="https://avatars1.githubusercontent.com/u/27206712?v=4?s=100" width="100px;" alt="Alexei Tighineanu"/><br /><sub><b>Alexei Tighineanu</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=atighineanu" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ellisab"><img src="https://avatars2.githubusercontent.com/u/1402047?v=4?s=100" width="100px;" alt="Alexandru Bonini"/><br /><sub><b>Alexandru Bonini</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=ellisab" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://senan.xyz"><img src="https://avatars0.githubusercontent.com/u/6832539?v=4?s=100" width="100px;" alt="Senan Kelly"/><br /><sub><b>Senan Kelly</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=sentriz" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/JonasPf"><img src="https://avatars.githubusercontent.com/u/2216775?v=4?s=100" width="100px;" alt="JonasPf"/><br /><sub><b>JonasPf</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=JonasPf" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/claycooper"><img src="https://avatars.githubusercontent.com/u/3612906?v=4?s=100" width="100px;" alt="claycooper"/><br /><sub><b>claycooper</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=claycooper" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://ko-fi.com/disyer"><img src="https://avatars.githubusercontent.com/u/16326697?v=4?s=100" width="100px;" alt="Derzsi Dániel"/><br /><sub><b>Derzsi Dániel</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=darktohka" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://josephkav.io"><img src="https://avatars.githubusercontent.com/u/4267227?v=4?s=100" width="100px;" alt="Joseph Kavanagh"/><br /><sub><b>Joseph Kavanagh</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=JosephKav" title="Code">💻</a> <a href="https://github.com/nicholas-fedor/shoutrrr/issues?q=author%3AJosephKav" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/atighineanu"><img src="https://avatars1.githubusercontent.com/u/27206712?v=4?s=100" width="100px;" alt="Alexei Tighineanu"/><br /><sub><b>Alexei Tighineanu</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=atighineanu" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ellisab"><img src="https://avatars2.githubusercontent.com/u/1402047?v=4?s=100" width="100px;" alt="Alexandru Bonini"/><br /><sub><b>Alexandru Bonini</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=ellisab" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://senan.xyz"><img src="https://avatars0.githubusercontent.com/u/6832539?v=4?s=100" width="100px;" alt="Senan Kelly"/><br /><sub><b>Senan Kelly</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=sentriz" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/JonasPf"><img src="https://avatars.githubusercontent.com/u/2216775?v=4?s=100" width="100px;" alt="JonasPf"/><br /><sub><b>JonasPf</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=JonasPf" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/claycooper"><img src="https://avatars.githubusercontent.com/u/3612906?v=4?s=100" width="100px;" alt="claycooper"/><br /><sub><b>claycooper</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=claycooper" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://ko-fi.com/disyer"><img src="https://avatars.githubusercontent.com/u/16326697?v=4?s=100" width="100px;" alt="Derzsi Dániel"/><br /><sub><b>Derzsi Dániel</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=darktohka" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://josephkav.io"><img src="https://avatars.githubusercontent.com/u/4267227?v=4?s=100" width="100px;" alt="Joseph Kavanagh"/><br /><sub><b>Joseph Kavanagh</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=JosephKav" title="Code">💻</a> <a href="https://github.com/circa10a/shoutrrr/issues?q=author%3AJosephKav" title="Bug reports">🐛</a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://ring0.lol"><img src="https://avatars.githubusercontent.com/u/1893909?v=4?s=100" width="100px;" alt="Justin Steven"/><br /><sub><b>Justin Steven</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/issues?q=author%3Ajustinsteven" title="Bug reports">🐛</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/serverleader"><img src="https://avatars.githubusercontent.com/u/34089?v=4?s=100" width="100px;" alt="Carlos Savcic"/><br /><sub><b>Carlos Savcic</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=serverleader" title="Code">💻</a> <a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=serverleader" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/PythonGermany"><img src="https://avatars.githubusercontent.com/u/97847597?v=4?s=100" width="100px;" alt="PythonGermany"/><br /><sub><b>PythonGermany</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=PythonGermany" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/noelob"><img src="https://avatars.githubusercontent.com/u/643338?v=4?s=100" width="100px;" alt="Noel O'Brien"/><br /><sub><b>Noel O'Brien</b></sub></a><br /><a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=noelob" title="Code">💻</a> <a href="https://github.com/nicholas-fedor/shoutrrr/commits?author=noelob" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://ring0.lol"><img src="https://avatars.githubusercontent.com/u/1893909?v=4?s=100" width="100px;" alt="Justin Steven"/><br /><sub><b>Justin Steven</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/issues?q=author%3Ajustinsteven" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/serverleader"><img src="https://avatars.githubusercontent.com/u/34089?v=4?s=100" width="100px;" alt="Carlos Savcic"/><br /><sub><b>Carlos Savcic</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=serverleader" title="Code">💻</a> <a href="https://github.com/circa10a/shoutrrr/commits?author=serverleader" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/PythonGermany"><img src="https://avatars.githubusercontent.com/u/97847597?v=4?s=100" width="100px;" alt="PythonGermany"/><br /><sub><b>PythonGermany</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=PythonGermany" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/noelob"><img src="https://avatars.githubusercontent.com/u/643338?v=4?s=100" width="100px;" alt="Noel O'Brien"/><br /><sub><b>Noel O'Brien</b></sub></a><br /><a href="https://github.com/circa10a/shoutrrr/commits?author=noelob" title="Code">💻</a> <a href="https://github.com/circa10a/shoutrrr/commits?author=noelob" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
@@ -289,7 +283,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 ## Related Project(s)
 
 - [Watchtower](https://github.com/nicholas-fedor/watchtower) - Automate Docker container image updates.
-- [Shoutrrr GitHub Action](https://github.com/nicholas-fedor/shoutrrr-action) - Notifications using Shoutrrr in GitHub Actions.
+- [Shoutrrr GitHub Action](https://github.com/circa10a/shoutrrr-action) - Notifications using Shoutrrr in GitHub Actions.
 - [Bezel](https://github.com/henrygd/beszel) - A lightweight server monitoring platform that includes Docker statistics, historical data, and alert functions.
 - [WatchYourLAN](https://github.com/aceberg/WatchYourLAN) - Lightweight network IP scanner with web GUI.
 - [DNSControl](https://github.com/StackExchange/dnscontrol)- Infrastructure as code for DNS.

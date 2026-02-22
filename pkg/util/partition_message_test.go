@@ -8,7 +8,7 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 var _ = ginkgo.Describe("Partition Message", func() {
@@ -17,6 +17,7 @@ var _ = ginkgo.Describe("Partition Message", func() {
 		TotalChunkSize: 6000,
 		ChunkCount:     10,
 	}
+
 	ginkgo.When("given a message that exceeds the max length", func() {
 		ginkgo.When("not splitting by lines", func() {
 			ginkgo.It("should return a payload with chunked messages", func() {
@@ -64,6 +65,7 @@ var _ = ginkgo.Describe("Partition Message", func() {
 						testString += strconv.FormatInt(int64(inputLen%16), 16)
 						items, omitted := PartitionMessage(testString, unalignedLimits, 7)
 						included := 0
+
 						for ii, item := range items {
 							expectedSize := unalignedLimits.ChunkSize
 
@@ -100,6 +102,7 @@ var _ = ginkgo.Describe("Partition Message", func() {
 							included += len(item.Text)
 							gomega.Expect(item.Text).To(gomega.HaveLen(expectedSize))
 						}
+
 						gomega.Expect(omitted + included).To(gomega.Equal(inputLen))
 					}
 				})

@@ -7,9 +7,9 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/standard"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/services/standard"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 func TestTestUtils(t *testing.T) {
@@ -49,6 +49,7 @@ var _ = ginkgo.Describe("the testutils package", func() {
 
 	ginkgo.Describe("Config test helpers", func() {
 		var config dummyConfig
+
 		ginkgo.BeforeEach(func() {
 			config = dummyConfig{}
 		})
@@ -100,6 +101,7 @@ var _ = ginkgo.Describe("the testutils package", func() {
 
 	ginkgo.Describe("Service test helpers", func() {
 		var service dummyService
+
 		ginkgo.BeforeEach(func() {
 			service = dummyService{}
 		})

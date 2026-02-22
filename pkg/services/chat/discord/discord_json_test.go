@@ -7,7 +7,7 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 var _ = ginkgo.Describe("Discord JSON Unit Tests", func() {
@@ -339,6 +339,7 @@ var _ = ginkgo.Describe("Discord JSON Unit Tests", func() {
 			for i := range items {
 				items[i] = types.MessageItem{Text: "Message " + strconv.Itoa(i)}
 			}
+
 			payload, err := CreatePayloadFromItems(items, "", colors)
 			gomega.Expect(err).ToNot(gomega.HaveOccurred())
 			gomega.Expect(payload.Embeds).To(gomega.HaveLen(MaxEmbeds))

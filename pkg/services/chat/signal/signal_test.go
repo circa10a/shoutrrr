@@ -9,8 +9,8 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 func TestSignal(t *testing.T) {
@@ -135,8 +135,10 @@ var _ = ginkgo.Describe("the signal service", func() {
 			})
 
 			ginkgo.When("the url is valid", func() {
-				var config *Config
-				var err error
+				var (
+					config *Config
+					err    error
+				)
 
 				ginkgo.BeforeEach(func() {
 					serviceURL, _ := url.Parse(
@@ -170,6 +172,7 @@ var _ = ginkgo.Describe("the signal service", func() {
 
 	ginkgo.Describe("sending the payload", func() {
 		var err error
+
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
 		})

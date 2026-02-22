@@ -5,8 +5,8 @@ import (
 
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // TestConfigGetInvalidQueryValue tests whether the config returns

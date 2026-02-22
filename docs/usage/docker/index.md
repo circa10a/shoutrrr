@@ -2,21 +2,13 @@
 
 ## Overview
 
-The Shoutrrr Docker image provides a lightweight containerized version of the Shoutrrr CLI, built on Alpine Linux for minimal size and broad compatibility. It supports all architectures (amd64, arm64, arm/v6, i386, riscv64) and is available on Docker Hub (`nickfedor/shoutrrr`) and GHCR (`ghcr.io/nicholas-fedor/shoutrrr`). Tags include `latest` (stable production), versioned tags (e.g., `v0.8.0`), and `latest-dev` (development snapshots).
+The Shoutrrr Docker image provides a lightweight containerized version of the Shoutrrr CLI, built on Alpine Linux for minimal size and broad compatibility. It supports all architectures (amd64, arm64, arm/v6, i386, riscv64) and is available on Docker Hub (`circa10a/shoutrrr`). Tags include `latest` (stable production), versioned tags (e.g., `v0.8.0`), and `latest-dev` (development snapshots).
 
 ## Usage
 
-=== "Docker Hub"
-
-    ```bash title="Pull Command Syntax"
-    docker pull nickfedor/shoutrrr:latest
-    ```
-
-=== "GHCR"
-
-    ```bash title="Pull Command Syntax"
-    docker pull ghcr.io/nicholas-fedor/shoutrrr:latest
-    ```
+```bash title="Pull Command Syntax"
+docker pull circa10a/shoutrrr:latest
+```
 
 Run Shoutrrr CLI commands inside the container using `docker run`.
 
@@ -43,7 +35,7 @@ The entrypoint is `/shoutrrr`, so commands like `send`, `generate`, `verify` wor
 
 !!! Example
     ```bash title="Send to Discord"
-    docker run --rm nickfedor/shoutrrr:latest send --url "discord://abc123@123456789" --message "Hello, Docker!"
+    docker run --rm circa10a/shoutrrr:latest send --url "discord://abc123@123456789" --message "Hello, Docker!"
     ```
 
     ```text title="Expected Output"
@@ -54,7 +46,7 @@ The entrypoint is `/shoutrrr`, so commands like `send`, `generate`, `verify` wor
 
 !!! Example
     ```bash title="Generate Discord URL"
-    docker run --rm -it nickfedor/shoutrrr:latest generate discord
+    docker run --rm -it circa10a/shoutrrr:latest generate discord
     ```
 
     ```text title="Expected Prompt Inputs"
@@ -72,7 +64,7 @@ The entrypoint is `/shoutrrr`, so commands like `send`, `generate`, `verify` wor
 
 !!! Example
     ```bash title="Verify Slack URL"
-    docker run --rm nickfedor/shoutrrr:latest verify --url "slack://token-a/token-b/token-c"
+    docker run --rm circa10a/shoutrrr:latest verify --url "slack://token-a/token-b/token-c"
     ```
 
     ```text title="Expected Output"
@@ -83,7 +75,7 @@ The entrypoint is `/shoutrrr`, so commands like `send`, `generate`, `verify` wor
 
 !!! Example
     ```bash title="Send with Env Vars and Stdin"
-    echo "Message from stdin" | docker run --rm -i -e SHOUTRRR_URL="slack://token-a/token-b/token-c" -e SHOUTRRR_MESSAGE="-" nickfedor/shoutrrr:latest send
+    echo "Message from stdin" | docker run --rm -i -e SHOUTRRR_URL="slack://token-a/token-b/token-c" -e SHOUTRRR_MESSAGE="-" circa10a/shoutrrr:latest send
     ```
 
     ```text title="Expected Output"
@@ -96,8 +88,8 @@ The entrypoint is `/shoutrrr`, so commands like `send`, `generate`, `verify` wor
 
 !!! Example
     ```bash title="Pull and Run on ARM64"
-    docker pull nickfedor/shoutrrr:arm64v8-latest
-    docker run --rm nickfedor/shoutrrr:arm64v8-latest --version
+    docker pull circa10a/shoutrrr:arm64v8-latest
+    docker run --rm circa10a/shoutrrr:arm64v8-latest --version
     ```
 
     ```text title="Expected Output"

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/dedupe"
+	"github.com/circa10a/shoutrrr/internal/dedupe"
 )
 
 func TestRemoveDuplicates(t *testing.T) {

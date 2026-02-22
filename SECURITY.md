@@ -11,4 +11,4 @@ Shoutrrr v0.x strives to be fully backwards-compatible, and hence only the lates
 
 ## Reporting a Vulnerability
 
-Vulnerabilities can be disclosed via email to <nick@nickfedor.com>
+Vulnerabilities can be disclosed via [GitHub Security Advisories](https://github.com/circa10a/shoutrrr/security/advisories/new)

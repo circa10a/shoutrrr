@@ -8,8 +8,8 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/meta"
-	"github.com/nicholas-fedor/shoutrrr/pkg/util"
+	"github.com/circa10a/shoutrrr/internal/meta"
+	"github.com/circa10a/shoutrrr/pkg/util"
 )
 
 func TestUtil(t *testing.T) {
@@ -101,7 +101,7 @@ var _ = ginkgo.Describe("the util package", func() {
 	ginkgo.When("calling function DocsURL", func() {
 		ginkgo.It("should return the expected URL", func() {
 			expectedBase := fmt.Sprintf(
-				`https://shoutrrr.nickfedor.com/%s/`,
+				`https://circa10a.github.io/shoutrrr/%s/`,
 				meta.GetVersion(),
 			)
 			gomega.Expect(util.DocsURL(``)).To(gomega.Equal(expectedBase))

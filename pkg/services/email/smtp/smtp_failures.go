@@ -1,7 +1,7 @@
 package smtp
 
 import (
-	"github.com/nicholas-fedor/shoutrrr/internal/failures"
+	"github.com/circa10a/shoutrrr/internal/failures"
 )
 
 const (

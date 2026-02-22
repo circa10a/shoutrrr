@@ -3,7 +3,7 @@ package logger
 import (
 	"net/url"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/standard"
+	"github.com/circa10a/shoutrrr/pkg/services/standard"
 )
 
 const (

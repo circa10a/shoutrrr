@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // BuildQuery converts the fields of a config object to a delimited query string.

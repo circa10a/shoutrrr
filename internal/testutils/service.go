@@ -3,7 +3,7 @@ package testutils
 import (
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // TestServiceSetInvalidParamValue tests whether the service returns an error

@@ -36,9 +36,8 @@ jobs:
     uses: ./.github/workflows/build.yaml
     permissions:
       contents: write # For code checkout and uploading release artifacts
-      packages: write # For pushing images to registries
       attestations: write # For generating provenance and SBOMs
-      id-token: write # For OIDC auth to Docker Hub and GHCR
+      id-token: write # For OIDC auth to Docker Hub
     with:
       build-type: dev # Development snapshot release
       dry-run: ${{ fromJson(inputs.dry-run || 'false') }} # String to boolean, defaults false
@@ -54,7 +53,6 @@ jobs:
     if: ${{ !fromJson(inputs.dry-run || 'false') }}
     permissions:
       contents: read # For code checkout
-      packages: write # For pushing manifests
     uses: ./.github/workflows/create-manifests.yaml
     secrets: inherit
     with:

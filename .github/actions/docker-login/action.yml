@@ -9,12 +9,6 @@ runs:
       with:
         username: ${{ inputs.dockerhub-username }}
         password: ${{ inputs.dockerhub-token }}
-    - name: Login to GHCR
-      uses: docker/login-action@3227f5311cb93ffd14d13e65d8cc400d30f4dd8a
-      with:
-        registry: ghcr.io
-        username: ${{ inputs.ghcr-username }}
-        password: ${{ inputs.ghcr-token }}
 
 inputs:
   dockerhub-username:
@@ -22,10 +16,4 @@ inputs:
     required: true
   dockerhub-token:
     description: "Docker Hub token"
-    required: true
-  ghcr-username:
-    description: "GHCR username"
-    required: true
-  ghcr-token:
-    description: "GHCR token"
     required: true

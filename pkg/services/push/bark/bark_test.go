@@ -12,8 +12,8 @@ import (
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/format"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/bark"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/services/push/bark"
 )
 
 // TestBark runs the Ginkgo test suite for the bark package.
@@ -31,6 +31,7 @@ var (
 	_                        = ginkgo.BeforeSuite(func() {
 		// Load the integration test URL from environment, if available
 		var err error
+
 		envBarkURL, err = url.Parse(os.Getenv("SHOUTRRR_BARK_URL"))
 		if err != nil {
 			envBarkURL = &url.URL{} // Default to empty URL if parsing fails
@@ -133,6 +134,7 @@ var _ = ginkgo.Describe("the bark service", func() {
 
 		ginkgo.It("handles communication errors without panicking", func() {
 			httpmock.DeactivateAndReset() // Ensure no mocks interfere
+
 			serviceURL := testutils.URLMust("bark://:devicekey@nonresolvablehostname")
 			gomega.Expect(service.Initialize(serviceURL, logger)).To(gomega.Succeed())
 			gomega.Expect(service.Send("Message", nil)).To(gomega.HaveOccurred())

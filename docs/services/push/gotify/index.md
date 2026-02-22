@@ -420,4 +420,4 @@ Check the Gotify server logs for additional error details. Common log locations:
 ### Getting Help
 
 - Check the [Gotify documentation](https://gotify.net/docs/) for server setup and configuration
-- Report issues on the [Shoutrrr GitHub repository](https://github.com/nicholas-fedor/shoutrrr)
+- Report issues on the [Shoutrrr GitHub repository](https://github.com/circa10a/shoutrrr)

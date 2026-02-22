@@ -9,8 +9,8 @@ import (
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/format"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/failures"
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/internal/failures"
+	"github.com/circa10a/shoutrrr/internal/testutils"
 )
 
 // TestFailures runs the Ginkgo test suite for the failures package.

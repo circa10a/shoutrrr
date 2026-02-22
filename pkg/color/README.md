@@ -7,7 +7,7 @@ Color lets you use colorized outputs in terms of [ANSI Escape Codes](http://en.w
 ## Install
 
 ```bash
-go get github.com/nicholas-fedor/shoutrrr/pkg/color@latest
+go get github.com/circa10a/shoutrrr/pkg/color@latest
 ```
 
 ## Examples

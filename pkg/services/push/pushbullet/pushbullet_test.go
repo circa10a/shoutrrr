@@ -10,8 +10,8 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/pushbullet"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/services/push/pushbullet"
 )
 
 func TestPushbullet(t *testing.T) {
@@ -124,7 +124,9 @@ var _ = ginkgo.Describe("the pushbullet service", func() {
 
 	ginkgo.Describe("sending the payload", func() {
 		var err error
+
 		targetURL := "https://api.pushbullet.com/v2/pushes"
+
 		ginkgo.BeforeEach(func() {
 			httpmock.Activate()
 		})

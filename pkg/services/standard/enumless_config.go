@@ -1,7 +1,7 @@
 package standard
 
 import (
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // EnumlessConfig implements the ServiceConfig interface for services that does not use Enum fields.

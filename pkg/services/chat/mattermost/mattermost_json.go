@@ -5,7 +5,7 @@ import (
 	"fmt" // Add this import
 	"regexp"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // iconURLPattern matches URLs starting with http or https for icon detection.
