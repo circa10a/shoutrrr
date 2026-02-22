@@ -7,10 +7,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	internalUtil "github.com/nicholas-fedor/shoutrrr/internal/util"
-	"github.com/nicholas-fedor/shoutrrr/pkg/color"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/router"
+	internalUtil "github.com/circa10a/shoutrrr/internal/util"
+	"github.com/circa10a/shoutrrr/pkg/color"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/router"
 )
 
 // Cmd verifies the validity of a service url.

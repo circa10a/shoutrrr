@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 const (

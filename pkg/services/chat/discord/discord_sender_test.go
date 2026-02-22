@@ -17,7 +17,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 var _ = ginkgo.Describe("Discord Sender", func() {

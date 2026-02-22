@@ -1,8 +1,8 @@
 package telegram
 
 import (
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 const (

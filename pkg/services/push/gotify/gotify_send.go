@@ -8,7 +8,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/util/jsonclient"
+	"github.com/circa10a/shoutrrr/pkg/util/jsonclient"
 )
 
 // Sender handles HTTP request execution and response processing.

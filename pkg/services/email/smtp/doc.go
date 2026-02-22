@@ -20,8 +20,8 @@
 //	import (
 //		"log"
 //		"net/url"
-//		"github.com/nicholas-fedor/shoutrrr/pkg/services/email/smtp"
-//		"github.com/nicholas-fedor/shoutrrr/pkg/types"
+//		"github.com/circa10a/shoutrrr/pkg/services/email/smtp"
+//		"github.com/circa10a/shoutrrr/pkg/types"
 //	)
 //
 //	func main() {

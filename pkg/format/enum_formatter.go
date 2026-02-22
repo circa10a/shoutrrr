@@ -3,7 +3,7 @@ package format
 import (
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // EnumInvalid is the constant value that an enum gets assigned when it could not be parsed.

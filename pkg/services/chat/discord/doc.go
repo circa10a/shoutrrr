@@ -28,7 +28,7 @@
 //
 // # Basic Usage
 //
-//	import "github.com/nicholas-fedor/shoutrrr/pkg/services/chat/discord"
+//	import "github.com/circa10a/shoutrrr/pkg/services/chat/discord"
 //
 //	service := &discord.Service{}
 //	err := service.Initialize(url, logger)

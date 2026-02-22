@@ -7,9 +7,9 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/discord"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/discord"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 var _ = ginkgo.Describe("Discord E2E Embed Author Test", func() {
@@ -34,11 +34,11 @@ var _ = ginkgo.Describe("Discord E2E Embed Author Test", func() {
 						{Key: "embed_author_name", Value: "Shoutrrr E2E Test"},
 						{
 							Key:   "embed_author_url",
-							Value: "https://github.com/nicholas-fedor/shoutrrr",
+							Value: "https://github.com/circa10a/shoutrrr",
 						},
 						{
 							Key:   "embed_author_icon_url",
-							Value: "https://raw.githubusercontent.com/nicholas-fedor/shoutrrr/master/docs/assets/media/shoutrrr-180px.png",
+							Value: "https://raw.githubusercontent.com/circa10a/shoutrrr/master/docs/assets/media/shoutrrr-180px.png",
 						},
 					},
 				},

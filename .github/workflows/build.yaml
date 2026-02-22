@@ -25,9 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # For code checkout and publishing releases
-      packages: write # For pushing images to registries
       attestations: write # For generating provenance and SBOMs
-      id-token: write # For OIDC auth to Docker Hub and GHCR
+      id-token: write # For OIDC auth to Docker Hub
     steps:
       - name: Validate build-type input # Ensure build-type is 'prod' or 'dev'.
         run: |
@@ -73,14 +72,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Login to GHCR # Authenticate to GHCR
-        if: ${{ !inputs.dry-run }}
-        uses: docker/login-action@3227f5311cb93ffd14d13e65d8cc400d30f4dd8a
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ github.token }}
 
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@ec59f474b9834571250b370d4735c50f8e2d1e29

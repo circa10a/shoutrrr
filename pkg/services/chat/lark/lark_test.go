@@ -11,9 +11,9 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 func TestLark(t *testing.T) {

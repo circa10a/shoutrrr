@@ -9,9 +9,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/router"
-	"github.com/nicholas-fedor/shoutrrr/shoutrrr/cmd"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/router"
+	"github.com/circa10a/shoutrrr/shoutrrr/cmd"
 )
 
 var (

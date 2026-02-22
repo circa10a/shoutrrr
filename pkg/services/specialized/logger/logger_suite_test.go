@@ -8,9 +8,9 @@ import (
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/specialized/logger"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/services/specialized/logger"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 func TestLogger(t *testing.T) {

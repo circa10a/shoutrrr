@@ -1,8 +1,8 @@
 package standard
 
 import (
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
-	"github.com/nicholas-fedor/shoutrrr/pkg/util"
+	"github.com/circa10a/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/util"
 )
 
 // Logger provides the utility methods Log* that maps to Logger.Print*.

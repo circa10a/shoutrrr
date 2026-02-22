@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/generators/basic"
-	"github.com/nicholas-fedor/shoutrrr/pkg/generators/xouath2"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/telegram"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/generators/basic"
+	"github.com/circa10a/shoutrrr/pkg/generators/xouath2"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/telegram"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 var ErrUnknownGenerator = errors.New("unknown generator")

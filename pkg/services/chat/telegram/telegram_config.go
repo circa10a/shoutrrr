@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // Scheme identifies this service in configuration URLs.

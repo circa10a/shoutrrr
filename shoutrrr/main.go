@@ -6,12 +6,12 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/meta"
-	"github.com/nicholas-fedor/shoutrrr/shoutrrr/cmd"
-	"github.com/nicholas-fedor/shoutrrr/shoutrrr/cmd/docs"
-	"github.com/nicholas-fedor/shoutrrr/shoutrrr/cmd/generate"
-	"github.com/nicholas-fedor/shoutrrr/shoutrrr/cmd/send"
-	"github.com/nicholas-fedor/shoutrrr/shoutrrr/cmd/verify"
+	"github.com/circa10a/shoutrrr/internal/meta"
+	"github.com/circa10a/shoutrrr/shoutrrr/cmd"
+	"github.com/circa10a/shoutrrr/shoutrrr/cmd/docs"
+	"github.com/circa10a/shoutrrr/shoutrrr/cmd/generate"
+	"github.com/circa10a/shoutrrr/shoutrrr/cmd/send"
+	"github.com/circa10a/shoutrrr/shoutrrr/cmd/verify"
 )
 
 var cobraCmd = &cobra.Command{

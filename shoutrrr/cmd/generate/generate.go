@@ -9,10 +9,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/color"
-	"github.com/nicholas-fedor/shoutrrr/pkg/generators"
-	"github.com/nicholas-fedor/shoutrrr/pkg/router"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/color"
+	"github.com/circa10a/shoutrrr/pkg/generators"
+	"github.com/circa10a/shoutrrr/pkg/router"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // MaximumNArgs defines the maximum number of positional arguments allowed.

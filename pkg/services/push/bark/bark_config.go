@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/standard"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/services/standard"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // Scheme is the identifying part of this service's configuration URL.

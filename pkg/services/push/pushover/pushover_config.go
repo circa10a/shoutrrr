@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // Scheme is the identifying part of this service's configuration URL.

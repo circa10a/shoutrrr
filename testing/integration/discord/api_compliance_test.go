@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/discord"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/discord"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 const contentTypeJSON = "application/json"

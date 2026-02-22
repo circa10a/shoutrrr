@@ -10,7 +10,7 @@ import (
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/ghttp"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/util/jsonclient"
+	"github.com/circa10a/shoutrrr/pkg/util/jsonclient"
 )
 
 func TestJSONClient(t *testing.T) {

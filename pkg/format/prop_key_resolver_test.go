@@ -4,7 +4,7 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 var _ = ginkgo.Describe("Prop Key Resolver", func() {

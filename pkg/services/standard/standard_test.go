@@ -12,7 +12,7 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/failures"
+	"github.com/circa10a/shoutrrr/internal/failures"
 )
 
 func TestStandard(t *testing.T) {

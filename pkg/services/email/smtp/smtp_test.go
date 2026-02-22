@@ -19,11 +19,11 @@ import (
 
 	gomegaTypes "github.com/onsi/gomega/types"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/failures"
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/standard"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/internal/failures"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/services/standard"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 var tt *testing.T

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/color"
+	"github.com/circa10a/shoutrrr/pkg/color"
 )
 
 // Example demonstrates basic color printing using helper functions.

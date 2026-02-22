@@ -4,14 +4,14 @@ Original Repository:
 <https://github.com/containrrr/shoutrrr>
 
 Fork Repository:
-<https://github.com/nicholas-fedor/shoutrrr>
+<https://github.com/circa10a/shoutrrr>
 
 ## Getting Started
 
 ### Cloning the Repository
 
 ```bash
-git clone https://github.com/nicholas-fedor/shoutrrr.git
+git clone https://github.com/circa10a/shoutrrr.git
 ```
 
 ### Development Tools

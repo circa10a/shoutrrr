@@ -10,12 +10,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/dedupe"
-	internalUtil "github.com/nicholas-fedor/shoutrrr/internal/util"
-	"github.com/nicholas-fedor/shoutrrr/pkg/router"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
-	"github.com/nicholas-fedor/shoutrrr/pkg/util"
-	cli "github.com/nicholas-fedor/shoutrrr/shoutrrr/cmd"
+	"github.com/circa10a/shoutrrr/internal/dedupe"
+	internalUtil "github.com/circa10a/shoutrrr/internal/util"
+	"github.com/circa10a/shoutrrr/pkg/router"
+	"github.com/circa10a/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/util"
+	cli "github.com/circa10a/shoutrrr/shoutrrr/cmd"
 )
 
 // MaximumNArgs defines the maximum number of arguments accepted by the command.

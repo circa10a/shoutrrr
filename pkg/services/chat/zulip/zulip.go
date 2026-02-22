@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/standard"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/services/standard"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // contentMaxSize defines the maximum allowed message size in bytes.

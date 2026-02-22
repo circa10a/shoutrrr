@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // DefaultTimeout is the default duration for service operation timeouts.

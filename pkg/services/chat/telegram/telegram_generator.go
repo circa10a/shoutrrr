@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
-	"github.com/nicholas-fedor/shoutrrr/pkg/util/generator"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/util/generator"
 )
 
 // UpdatesLimit defines the number of updates to retrieve per API call.

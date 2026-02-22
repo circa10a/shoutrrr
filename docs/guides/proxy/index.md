@@ -71,7 +71,7 @@ http.DefaultClient.Transport = &http.Transport{
         "net/http"
         "net/url"
         "time"
-        "github.com/nicholas-fedor/shoutrrr"
+        "github.com/circa10a/shoutrrr"
     )
 
     func main() {

@@ -12,9 +12,9 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/sms/twilio"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/services/sms/twilio"
 )
 
 const hookURL = "https://api.twilio.com/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Messages.json"

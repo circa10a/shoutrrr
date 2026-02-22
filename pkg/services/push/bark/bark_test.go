@@ -12,8 +12,8 @@ import (
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/format"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/push/bark"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/services/push/bark"
 )
 
 // TestBark runs the Ginkgo test suite for the bark package.

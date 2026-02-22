@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/util/jsonclient"
+	"github.com/circa10a/shoutrrr/pkg/util/jsonclient"
 )
 
 // Client for Telegram API.

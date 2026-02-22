@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/standard"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/services/standard"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // Service is the Logger service struct.

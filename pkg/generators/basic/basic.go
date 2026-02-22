@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/color"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/color"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // Errors defined as static variables for better error handling.

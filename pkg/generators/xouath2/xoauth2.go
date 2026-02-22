@@ -16,8 +16,8 @@ import (
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/email/smtp"
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/services/email/smtp"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // SMTP port constants.

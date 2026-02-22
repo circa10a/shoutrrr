@@ -11,7 +11,7 @@ import (
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/telegram"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/telegram"
 )
 
 const (

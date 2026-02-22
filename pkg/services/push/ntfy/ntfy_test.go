@@ -24,9 +24,9 @@ import (
 
 	gomegaformat "github.com/onsi/gomega/format"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/format"
-	"github.com/nicholas-fedor/shoutrrr/pkg/util/jsonclient"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/format"
+	"github.com/circa10a/shoutrrr/pkg/util/jsonclient"
 )
 
 func TestNtfy(t *testing.T) {

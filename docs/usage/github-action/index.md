@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Shoutrrr GitHub Action (`nicholas-fedor/shoutrrr-action`) integrates Shoutrrr into your workflows to send notifications using service URLs. It supports all Shoutrrr services and allows dynamic messaging with GitHub context variables.
+The Shoutrrr GitHub Action (`circa10a/shoutrrr-action`) integrates Shoutrrr into your workflows to send notifications using service URLs. It supports all Shoutrrr services and allows dynamic messaging with GitHub context variables.
 
 ## Usage
 
@@ -10,7 +10,7 @@ Add the action to your `.github/workflows` YAML file.
 
 ```yaml title="Workflow Syntax Example"
 - name: Shoutrrr
-  uses: nicholas-fedor/shoutrrr-action@v1
+  uses: circa10a/shoutrrr-action@v1
   with:
     url: <SERVICE_URL>
     title: <NOTIFICATION_TITLE>
@@ -46,7 +46,7 @@ Add the action to your `.github/workflows` YAML file.
           - [Your other workflow steps]
 
           - name: Shoutrrr
-            uses: nicholas-fedor/shoutrrr-action@v1
+            uses: circa10a/shoutrrr-action@v1
             with:
               url: ${{ secrets.SHOUTRRR_URL }}
               title: Deployed ${{ github.sha }}
@@ -71,7 +71,7 @@ Add the action to your `.github/workflows` YAML file.
         runs-on: ubuntu-latest
         steps:
           - name: Shoutrrr
-            uses: nicholas-fedor/shoutrrr-action@v1
+            uses: circa10a/shoutrrr-action@v1
             with:
               url: ${{ secrets.DISCORD_URL }}
               title: New PR #${{ github.event.number }}
@@ -96,7 +96,7 @@ Add the action to your `.github/workflows` YAML file.
 
           - name: Notify on Failure
             if: failure()
-            uses: nicholas-fedor/shoutrrr-action@v1
+            uses: circa10a/shoutrrr-action@v1
             with:
               url: ${{ secrets.SLACK_URL }}
               title: Build Failed

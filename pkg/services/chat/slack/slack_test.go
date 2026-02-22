@@ -14,8 +14,8 @@ import (
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/format"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/testutils"
-	"github.com/nicholas-fedor/shoutrrr/pkg/services/chat/slack"
+	"github.com/circa10a/shoutrrr/internal/testutils"
+	"github.com/circa10a/shoutrrr/pkg/services/chat/slack"
 )
 
 const (
@@ -197,7 +197,7 @@ var _ = ginkgo.Describe("the slack service", func() {
 				config := slack.Config{}
 				sb := strings.Builder{}
 				for i := 1; i <= 110; i++ {
-					sb.WriteString(fmt.Sprintf("Line %d\n", i))
+					fmt.Fprintf(&sb, "Line %d\n", i)
 				}
 				payload := slack.CreateJSONPayload(&config, sb.String()).(slack.MessagePayload)
 				atts := payload.Attachments

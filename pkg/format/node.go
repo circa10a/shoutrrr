@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
-	"github.com/nicholas-fedor/shoutrrr/pkg/util"
+	"github.com/circa10a/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/util"
 )
 
 // NodeTokenType is used to represent the type of value that a node has for syntax highlighting.

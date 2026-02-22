@@ -9,7 +9,7 @@ import (
 
 	"github.com/jarcoal/httpmock"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/types"
 )
 
 // Example demonstrates basic webhook sending to a generic endpoint.

@@ -2,7 +2,7 @@
 #                                                                                                    #
 #                          Shoutrrr GoReleaser Production Release Configuration                      #
 #                                                                                                    #
-# Shoutrrr: https://github.com/nicholas-fedor/shoutrrr/                                              #
+# Shoutrrr: https://github.com/circa10a/shoutrrr/                                              #
 # GoReleaser: https://goreleaser.com/                                                                #
 #                                                                                                    #
 ######################################################################################################
@@ -37,9 +37,9 @@ builds:
       - -X main.version={{ .Version }}
       - -X main.commit={{ .Commit }}
       - -X main.date={{ .CommitDate }}
-      - -X github.com/nicholas-fedor/shoutrrr/internal/meta.Version={{ .Version }}
-      - -X github.com/nicholas-fedor/shoutrrr/internal/meta.Commit={{ .Commit }}
-      - -X github.com/nicholas-fedor/shoutrrr/internal/meta.Date={{ .Date }}
+      - -X github.com/circa10a/shoutrrr/internal/meta.Version={{ .Version }}
+      - -X github.com/circa10a/shoutrrr/internal/meta.Commit={{ .Commit }}
+      - -X github.com/circa10a/shoutrrr/internal/meta.Date={{ .Date }}
 
     # Custom environment variables to be set during the builds.
     # Invalid environment variables will be ignored.
@@ -175,10 +175,8 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:amd64-{{ .Tag }}
-      - nickfedor/shoutrrr:amd64-latest
-      - ghcr.io/nicholas-fedor/shoutrrr:amd64-{{ .Tag }}
-      - ghcr.io/nicholas-fedor/shoutrrr:amd64-latest
+      - circa10a/shoutrrr:amd64-{{ .Tag }}
+      - circa10a/shoutrrr:amd64-latest
 
     # Path to the Dockerfile (from the project root).
     # Default: 'Dockerfile'.
@@ -228,10 +226,8 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:i386-{{ .Tag }}
-      - nickfedor/shoutrrr:i386-latest
-      - ghcr.io/nicholas-fedor/shoutrrr:i386-{{ .Tag }}
-      - ghcr.io/nicholas-fedor/shoutrrr:i386-latest
+      - circa10a/shoutrrr:i386-{{ .Tag }}
+      - circa10a/shoutrrr:i386-latest
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.
@@ -285,10 +281,8 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:armhf-{{ .Tag }}
-      - nickfedor/shoutrrr:armhf-latest
-      - ghcr.io/nicholas-fedor/shoutrrr:armhf-{{ .Tag }}
-      - ghcr.io/nicholas-fedor/shoutrrr:armhf-latest
+      - circa10a/shoutrrr:armhf-{{ .Tag }}
+      - circa10a/shoutrrr:armhf-latest
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.
@@ -341,10 +335,8 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:arm64v8-{{ .Tag }}
-      - nickfedor/shoutrrr:arm64v8-latest
-      - ghcr.io/nicholas-fedor/shoutrrr:arm64v8-{{ .Tag }}
-      - ghcr.io/nicholas-fedor/shoutrrr:arm64v8-latest
+      - circa10a/shoutrrr:arm64v8-{{ .Tag }}
+      - circa10a/shoutrrr:arm64v8-latest
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.
@@ -395,10 +387,8 @@ dockers:
     # Templates of the Docker image names.
     # Templates: allowed.
     image_templates:
-      - nickfedor/shoutrrr:riscv64-{{ .Tag }}
-      - nickfedor/shoutrrr:riscv64-latest
-      - ghcr.io/nicholas-fedor/shoutrrr:riscv64-{{ .Tag }}
-      - ghcr.io/nicholas-fedor/shoutrrr:riscv64-latest
+      - circa10a/shoutrrr:riscv64-{{ .Tag }}
+      - circa10a/shoutrrr:riscv64-latest
 
     # Path to the Dockerfile (from the project root).
     # Templates: allowed.

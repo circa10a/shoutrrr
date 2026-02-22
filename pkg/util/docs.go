@@ -3,7 +3,7 @@ package util
 import (
 	"fmt"
 
-	"github.com/nicholas-fedor/shoutrrr/internal/meta"
+	"github.com/circa10a/shoutrrr/internal/meta"
 )
 
 // DocsURL returns a full documentation URL for the current version of Shoutrrr with the path appended.
@@ -20,5 +20,5 @@ func DocsURL(path string) string {
 		version = meta.GetCommit()
 	}
 
-	return fmt.Sprintf("https://shoutrrr.nickfedor.com/%s/%s", version, path)
+	return fmt.Sprintf("https://circa10a.github.io/shoutrrr/%s/%s", version, path)
 }

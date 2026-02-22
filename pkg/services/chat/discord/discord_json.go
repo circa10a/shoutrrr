@@ -3,8 +3,8 @@ package discord
 import (
 	"time"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/types"
-	"github.com/nicholas-fedor/shoutrrr/pkg/util"
+	"github.com/circa10a/shoutrrr/pkg/types"
+	"github.com/circa10a/shoutrrr/pkg/util"
 )
 
 const (

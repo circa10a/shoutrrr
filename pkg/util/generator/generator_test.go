@@ -11,7 +11,7 @@ import (
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
 
-	"github.com/nicholas-fedor/shoutrrr/pkg/util/generator"
+	"github.com/circa10a/shoutrrr/pkg/util/generator"
 )
 
 func TestGenerator(t *testing.T) {
