@@ -131,6 +131,15 @@ linters:
   # Linter Settings Configuration
   ######################################################################################################
   settings:
+    gosec:
+      # Exclude rules that are false positives for this project:
+      # G117: Config structs legitimately hold auth credentials (Password, APIKey, Secret, etc.).
+      # G704: The library's core purpose is sending HTTP requests to user-configured endpoints.
+      # G705: All flagged instances are CLI/terminal output (fmt.Fprint to os.Stderr/color.Output), not web.
+      excludes:
+        - G117
+        - G704
+        - G705
     varnamelen:
       max-distance: 5
       min-name-length: 3
@@ -224,6 +233,24 @@ linters:
         linters:
           - revive
         text: "avoid meaningless package names"
+
+      # Exclude revive from flagging package names that conflict with Go standard library.
+      - path: "pkg/color/.*"
+        linters:
+          - revive
+        text: "avoid package names that conflict"
+      - path: "pkg/format/.*"
+        linters:
+          - revive
+        text: "avoid package names that conflict"
+      - path: "pkg/services/chat/signal/.*"
+        linters:
+          - revive
+        text: "avoid package names that conflict"
+      - path: "pkg/services/email/smtp/.*"
+        linters:
+          - revive
+        text: "avoid package names that conflict"
 
       # Run some linter only for test files by excluding its issues for everything else.
       # - path-except: _test\.go
