@@ -20,5 +20,5 @@ func DocsURL(path string) string {
 		version = meta.GetCommit()
 	}
 
-	return fmt.Sprintf("https://circa10a.github.io/shoutrrr/%s/%s", version, path)
+	return fmt.Sprintf("https://caleblemoine.dev/shoutrrr/%s/%s", version, path)
 }

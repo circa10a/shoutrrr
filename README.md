@@ -53,7 +53,7 @@ Heavily inspired by <a href="https://github.com/caronc/apprise">caronc/apprise</
 
 ## Full Documentation
 
-Visit the project's [GitHub Page](https://circa10a.github.io/shoutrrr) for full documentation.
+Visit the project's [GitHub Page](https://caleblemoine.dev/shoutrrr) for full documentation.
 
 ## Installation
 

@@ -77,9 +77,17 @@ jobs:
               --config-file build/mkdocs/mkdocs.yaml \
               --push \
               --update-aliases "${{ steps.mike.outputs.version }}" "${{ steps.mike.outputs.aliases }}"
+            mike set-default \
+              --config-file build/mkdocs/mkdocs.yaml \
+              --push \
+              latest
           else
             mike deploy \
               --config-file build/mkdocs/mkdocs.yaml \
               --push \
               "${{ steps.mike.outputs.version }}"
+            mike set-default \
+              --config-file build/mkdocs/mkdocs.yaml \
+              --push \
+              dev
           fi

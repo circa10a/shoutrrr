@@ -99,6 +99,8 @@ builds:
     # List of combinations of GOOS + GOARCH + GOARM to ignore.
     ignore:
       - goos: windows
+        goarch: arm
+      - goos: windows
         goarch: riscv64
 
     # Set the modified timestamp on the output binary, typically
