@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - docs/**
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
   release:
     types: [published]
 
@@ -65,6 +67,9 @@ jobs:
         run: |
           if [[ "${{ github.event_name }}" == "release" ]]; then
             echo "version=${{ github.event.release.tag_name }}" >> "$GITHUB_OUTPUT"
+            echo "aliases=latest" >> "$GITHUB_OUTPUT"
+          elif [[ "${{ github.ref_type }}" == "tag" && "${{ github.ref_name }}" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "version=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
             echo "aliases=latest" >> "$GITHUB_OUTPUT"
           else
             echo "version=dev" >> "$GITHUB_OUTPUT"
